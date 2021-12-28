@@ -24,17 +24,18 @@ app.get("/", function(req, res)
         Doc.find({}, function(err, updates){
             res.json(updates)
         }).sort({"_id": -1}).limit(4);
+        console.log("Sent data.");
     }
 );
 
 
-// app.listen(5001, () => {
-//     console.log("Server is running on port 5000");
-//     // MongoClient.connect(uri, {useNewUrlParser: true}, {useUnifiedTopology: true}, (error, result) => {
-//     //     if (error) throw error;
-//     //     database = result.db("thenewsil")
-//     //     console.log("Connected to database ", database.toString())
-//     // })
-// }).on('error', function (err) {
-//     console.log(err)
-// });
+app.listen(5001, () => {
+    console.log("Server is running on port 5000");
+    // MongoClient.connect(uri, {useNewUrlParser: true}, {useUnifiedTopology: true}, (error, result) => {
+    //     if (error) throw error;
+    //     database = result.db("thenewsil")
+    //     console.log("Connected to database ", database.toString())
+    // })
+}).on('error', function (err) {
+    console.log(err)
+});
