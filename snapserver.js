@@ -28,13 +28,13 @@ app.get("/", function(req, res)
 );
 
 
-app.listen(5001, () => {
-    console.log("Server is running on port 5000");
-    // MongoClient.connect(uri, {useNewUrlParser: true}, {useUnifiedTopology: true}, (error, result) => {
-    //     if (error) throw error;
-    //     database = result.db("thenewsil")
-    //     console.log("Connected to database ", database.toString())
-    // })
-}).on('error', function (err) {
-    console.log(err)
-});
+// app.listen(5001, () => {
+//     console.log("Server is running on port 5000");
+//     // MongoClient.connect(uri, {useNewUrlParser: true}, {useUnifiedTopology: true}, (error, result) => {
+//     //     if (error) throw error;
+//     //     database = result.db("thenewsil")
+//     //     console.log("Connected to database ", database.toString())
+//     // })
+// }).on('error', function (err) {
+//     console.log(err)
+// });
