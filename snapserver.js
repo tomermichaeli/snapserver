@@ -28,6 +28,15 @@ app.get("/", function(req, res)
     }
 );
 
+app.get("/all", function(req, res)
+    {
+        Doc.find({}, function(err, updates){
+            res.json(updates)
+        }).sort({"time": -1}).limit(30);
+        console.log("Sent data.");
+    }
+);
+
 
 // app.listen(5001, () => {
 //     console.log("Server is running on port 5000");
