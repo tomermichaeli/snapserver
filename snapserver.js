@@ -23,7 +23,7 @@ app.get("/", function(req, res)
     {
         Doc.find({}, function(err, updates){
             res.json(updates)
-        }).sort({"time": -1}).limit(20);
+        }).sort({"time": -1}).limit(3);
         console.log("Sent data.");
     }
 );
