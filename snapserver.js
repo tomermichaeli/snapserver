@@ -14,7 +14,11 @@ mongoose.connect(uri, {useNewUrlParser: true}, {useUnifiedTopology: true});
 const DocSchema = {
     headline: String,
     body: String,
-    time: String
+    time: String,
+    quote: String,
+    quote_headline: String,
+    quote_body: String,
+    quote_time: String
 }
 
 const Doc = mongoose.model("updates", DocSchema); //(collection, data schema)
