@@ -2,10 +2,11 @@ const express =  require("express");
 const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
-const bodyParser = require("body-parser");
 
 
 app.use(cors());
+
+const bodyParser = require("body-parser");
 
 const uri = "mongodb+srv://test:test@cluster0.anx9a.mongodb.net/thenewsil?retryWrites=true&w=majority";
 
